@@ -1,0 +1,22 @@
+{
+    "name":"gittyup",
+    "descriptions": "easy git deployment for node.js apps",
+    "version": "0.0.1",
+    "author": "Craig Condon <craig@spiceapps.com>",
+    "bin": {
+        "beet": "./bin/beandocs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/spiceapps/gittyup.git"
+    },
+    "main": "./lib/index.js",
+    "dependencies": {
+        "beanpole"
+    },
+    "os": [
+        "linux",
+        "darwin",
+        "freebsd"
+    ]
+}
