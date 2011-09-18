@@ -12,7 +12,11 @@
     },
     "main": "./lib/index.js",
     "dependencies": {
-        "beanpole"
+        "structr":"*",
+        "node-fs":"*",
+        "gumbo":"*",
+        "ini": "*",
+        "beet": "*"
     },
     "os": [
         "linux",
