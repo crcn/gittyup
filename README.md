@@ -13,7 +13,7 @@ Example:
 var gittyup = require('gittyup'),
 app = gittyup.app('test-app');
 
-app.checkout('git@github.com:spiceapps/beet.git', function(err, result)
+app.checkout('git@github.com:spiceapps/gittyup-test.git', function(err, result)
 {
 	
 
@@ -25,22 +25,14 @@ app.checkout('git@github.com:spiceapps/beet.git', function(err, result)
 			//rollback to the last working repo.
 			return app.rollback();
 		}	
+
+		//start with supervisord!
+		app.start(function(err, result)
+		{
+			if(!err) console.log('started gittyup-test!');
+		});
 	});
 
 
 	
 });
-
-
-gittyup.checkout('git@github.com:spiceapps/beet.git', function(err, app)
-{
-
-	//test the app to make sure it works!
-	app.test(function(err, result)
-	{
-	});
-
-	//
-});
-
-```
