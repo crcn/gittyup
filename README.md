@@ -15,8 +15,6 @@ app = gittyup.app('test-app');
 
 app.checkout('git@github.com:spiceapps/gittyup-test.git', function(err, result)
 {
-	
-
 	//test to make sure it's working properly
 	app.test(err, result)
 	{
@@ -25,14 +23,21 @@ app.checkout('git@github.com:spiceapps/gittyup-test.git', function(err, result)
 			//rollback to the last working repo.
 			return app.rollback();
 		}	
-
-		//start with supervisord!
-		app.start(function(err, result)
-		{
-			if(!err) console.log('started gittyup-test!');
-		});
 	});
-
-
-	
 });
+
+
+
+
+gittyup.addListener('update', function()
+{
+	//start application logic here	
+});
+
+
+gittyup.addListener('remove', function()
+{
+	//remove application logic here
+});
+
+````
