@@ -9,10 +9,10 @@
     },
     "main": "./lib/index.js",
     "dependencies": {
+        "sk":"*",
         "structr":"*",
         "node-fs":"*",
-        "gumbo":"*",
-        "sk":"*"
+        "gumbo":"*"
     },
     "os": [
         "linux",

@@ -29,13 +29,13 @@ app.checkout('git@github.com:spiceapps/gittyup-test.git', function(err, result)
 
 
 
-gittyup.addListener('update', function()
+app.addListener('update', function()
 {
 	//start application logic here	
 });
 
 
-gittyup.addListener('remove', function()
+app.addListener('remove', function()
 {
 	//remove application logic here
 });
