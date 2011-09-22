@@ -1,8 +1,9 @@
 Gittyup is a node.js deplyment utility with some slick features:
 
-- Rollback support
-- Script testing before deployment
-- Supports any language (I Think...)
+- Rollback support.
+- Script testing before deployment.
+- Start/Stop/Restart checked out apps.
+- Make a slug out of your app and easily move it quickly between servers.
 
 
 ### To Do:
@@ -155,9 +156,23 @@ Once a slug is made, calling "makeSlug" on the same checkout will have no effect
 gittyup.app('myApp').makeSlug(function(err, item)
 {
 	console.log(item.slug); // /etc/gittyup/apps/myApp/16767565434/slug/753a644f4e7aaa7fc9132be92d000002.tar.gz
+
 });
 
 ```
+
+If you're moving the slug around, install gittyup on the other end and have something ready like this:
+
+```javascript
+
+gittyup.app('myApp').checkout('http://myServer.com/myApp.slug', function(err, result)
+{
+	//...do stuff with transported slug
+})
+
+```
+
+
 
 ### .app().current(callback)
 
