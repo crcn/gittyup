@@ -57,9 +57,9 @@ First argument can be either a string (app name), or object
 
 #### arguments
 	
-	* `name` - The name of the application.
-	* `group` - The group the application is in.
-	* `maxRecords` -  Maximum number of application records to keep locally.
+* `name` - The name of the application.
+* `group` - The group the application is in.
+* `maxRecords` -  Maximum number of application records to keep locally.
 
 
 ### .app().checkout(source, callback)
