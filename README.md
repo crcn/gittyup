@@ -144,6 +144,20 @@ Tests the most recent checked out item. Make sure to include "scripts:test" in y
 
 When exiting the test program, an exit code of 0 tells gittyup the test was successful, whereas 1 tells gittyup the test failed.
 
+### .app().makeSlug(callback)
+
+Makes a slug out of the most recent checkout. Use this method if you need to move the application around between servers. 
+Once a slug is made, calling "makeSlug" on the same checkout will have no effect.
+
+
+```javascript
+
+gittyup.app('myApp').makeSlug(function(err, item)
+{
+	console.log(item.slug); // /etc/gittyup/apps/myApp/16767565434/slug/753a644f4e7aaa7fc9132be92d000002.tar.gz
+});
+
+```
 
 ### .app().current(callback)
 
@@ -165,19 +179,6 @@ Removes a checked out item.
 
 Destroys the application, and all the checked out items.
 
-### .app().makeSlug(callback)
 
-Makes a slug out of the most recent checkout. Use this method if you need to move the application around between servers. 
-Once a slug is made, calling "makeSlug" on the same checkout will have no effect.
-
-
-```javascript
-
-gittyup.app('myApp').makeSlug(function(err, item)
-{
-	console.log(item.slug); // /etc/gittyup/apps/myApp/16767565434/slug/753a644f4e7aaa7fc9132be92d000002.tar.gz
-});
-
-```
 
 
