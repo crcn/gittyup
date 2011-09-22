@@ -5,17 +5,17 @@ Gittyup is a node.js deplyment utility with some slick features:
 - Supports any language (I Think...)
 
 
-#### To Do:
+### To Do:
 
 - Storage transports: rackspace, amazon aws, etc
 - .slugignore
 
 
 
-### Documentation
+## Documentation
 
 
-#### .gittyup(rootDirectory)
+### .gittyup(rootDirectory)
 
 root directory by default is /etc/gittyup/
 
@@ -51,18 +51,18 @@ app.checkout('myProjectSource', function(err, result)
 ```
 
 
-#### .app(ops)
+### .app(ops)
 
 First argument can be either a string (app name), or object
 
-##### arguments
+#### arguments
 	
 	* `name` - The name of the application.
 	* `group` - The group the application is in.
 	* `maxRecords` -  Maximum number of application records to keep locally.
 
 
-#### .app().checkout(source, callback)
+### .app().checkout(source, callback)
 
 From a git repository:
 
@@ -96,7 +96,7 @@ gittyup.app('myApp').checkout('/some/local/path', function(err, result)
 
 ```
 
-#### .app().process(callback)
+### .app().process(callback)
 
 Returns a runnable process of the most recent checked out item.
 
