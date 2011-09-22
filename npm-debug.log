@@ -1,0 +1,371 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+info using npm@1.0.27
+info using node@v0.4.11
+verbose config file /Users/craigcondon/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose publish [ '.' ]
+silly testEngine { name: 'gittyup',
+silly testEngine   descriptions: 'easy git deployment for node.js apps',
+silly testEngine   version: '0.0.7',
+silly testEngine   author: { name: 'Craig Condon', email: 'craig@spiceapps.com' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/spiceapps/gittyup.git' },
+silly testEngine   main: './lib/index.js',
+silly testEngine   dependencies: { sk: '*', structr: '*', 'node-fs': '*', gumbo: '*' },
+silly testEngine   os: [ 'linux', 'darwin', 'freebsd' ],
+silly testEngine   _npmJsonOpts: 
+silly testEngine    { file: '/Users/craigcondon/Developer/Jobs/Spice/spice.io/node/gittyup/package.json',
+silly testEngine      wscript: false,
+silly testEngine      contributors: false,
+silly testEngine      serverjs: false },
+silly testEngine   _id: 'gittyup@0.0.7',
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.27',
+silly testEngine   _nodeVersion: 'v0.4.11',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   scripts: {} }
+verbose caching /Users/craigcondon/Developer/Jobs/Spice/spice.io/node/gittyup/package.json
+verbose loadDefaults gittyup@0.0.7
+info prepublish gittyup@0.0.7
+verbose cache add [ '.', null ]
+silly cache add: name, spec, args [ undefined, '.', [ '.', null ] ]
+verbose parsed url { pathname: '.', href: '.' }
+silly testEngine { name: 'gittyup',
+silly testEngine   descriptions: 'easy git deployment for node.js apps',
+silly testEngine   version: '0.0.7',
+silly testEngine   author: { name: 'Craig Condon', email: 'craig@spiceapps.com' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/spiceapps/gittyup.git' },
+silly testEngine   main: './lib/index.js',
+silly testEngine   dependencies: { sk: '*', structr: '*', 'node-fs': '*', gumbo: '*' },
+silly testEngine   os: [ 'linux', 'darwin', 'freebsd' ],
+silly testEngine   _npmJsonOpts: 
+silly testEngine    { file: 'package.json',
+silly testEngine      wscript: false,
+silly testEngine      contributors: false,
+silly testEngine      serverjs: false },
+silly testEngine   _id: 'gittyup@0.0.7',
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.27',
+silly testEngine   _nodeVersion: 'v0.4.11',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/Users/craigcondon/Developer/Jobs/Spice/spice.io/node/gittyup',
+silly testEngine   bundleDependencies: [] }
+verbose caching package.json
+verbose loadDefaults gittyup@0.0.7
+verbose pack /Users/craigcondon/Developer/Jobs/Spice/spice.io/node/gittyup /tmp/npm-1316668344087/1316668344087-0.16812681895680726/tmp.tgz
+silly testEngine { name: 'beet',
+silly testEngine   descriptions: 'Supervisord library for node.js',
+silly testEngine   version: '0.1.1',
+silly testEngine   author: { name: 'Craig Condon', email: 'craig@spiceapps.com' },
+silly testEngine   bin: { beet: './bin/beet' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/spiceapps/beet.git' },
+silly testEngine   main: './lib/index.js',
+silly testEngine   dependencies: 
+silly testEngine    { sk: '*',
+silly testEngine      express: '*',
+silly testEngine      vine: '*',
+silly testEngine      structr: '*',
+silly testEngine      gumbo: '*',
+silly testEngine      supervisord: '*',
+silly testEngine      ini: '*',
+silly testEngine      'node-fs': '*' },
+silly testEngine   scripts: { install: './bin/install -no' },
+silly testEngine   os: [ 'linux', 'darwin', 'freebsd' ],
+silly testEngine   _npmJsonOpts: 
+silly testEngine    { file: '/Users/craigcondon/Developer/Jobs/Spice/spice.io/node/beet/package.json',
+silly testEngine      wscript: false,
+silly testEngine      contributors: false,
+silly testEngine      serverjs: false },
+silly testEngine   _id: 'beet@0.1.1',
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.27',
+silly testEngine   _nodeVersion: 'v0.4.11',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/craigcondon/Developer/Jobs/Spice/spice.io/node/beet/package.json
+verbose loadDefaults beet@0.1.1
+silly testEngine { name: 'gumbo',
+silly testEngine   description: 'node.js db',
+silly testEngine   version: '0.0.6',
+silly testEngine   author: { name: 'Craig Condon' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/spiceapps/gumbo.git' },
+silly testEngine   directories: { lib: './lib' },
+silly testEngine   dependencies: 
+silly testEngine    { sk: '*',
+silly testEngine      structr: '*',
+silly testEngine      guava: '*',
+silly testEngine      cashew: '*',
+silly testEngine      'node-fs': '*' },
+silly testEngine   main: './lib/index.js',
+silly testEngine   _npmJsonOpts: 
+silly testEngine    { file: '/Users/craigcondon/Developer/Jobs/Spice/spice.io/libs/node/gumbo/package.json',
+silly testEngine      wscript: false,
+silly testEngine      contributors: false,
+silly testEngine      serverjs: false },
+silly testEngine   _id: 'gumbo@0.0.6',
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.27',
+silly testEngine   _nodeVersion: 'v0.4.11',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/craigcondon/Developer/Jobs/Spice/spice.io/libs/node/gumbo/package.json
+verbose loadDefaults gumbo@0.0.6
+verbose mkdir (expected) error ENOENT, No such file or directory '/tmp/npm-1316668344087'
+verbose mkdir (expected) error ENOENT, No such file or directory '/tmp/npm-1316668344087/1316668344087-0.16812681895680726'
+verbose mkdir done: /tmp/npm-1316668344087/1316668344087-0.16812681895680726 755
+verbose mkdir'ed /tmp/npm-1316668344087/1316668344087-0.16812681895680726
+verbose tar about to write tar and gzip it.
+silly tar args [ '-cvf',
+silly tar args   '-',
+silly tar args   'gittyup/.gitignore',
+silly tar args   'gittyup/package.json',
+silly tar args   'gittyup/README.md',
+silly tar args   'gittyup/examples/slug.js',
+silly tar args   'gittyup/lib/app.js',
+silly tar args   'gittyup/lib/factory.js',
+silly tar args   'gittyup/lib/index.js',
+silly tar args   'gittyup/lib/process.js',
+silly tar args   'gittyup/lib/slug.js',
+silly tar args   'gittyup/lib/checkout/git',
+silly tar args   'gittyup/lib/checkout/fs.js',
+silly tar args   'gittyup/lib/checkout/git.js',
+silly tar args   'gittyup/lib/checkout/index.js',
+silly tar args   'gittyup/lib/checkout/slug.js',
+silly tar args   'gittyup/lib/link/javascript.js',
+silly tar args   'gittyup/lib/link/index.js' ]
+verbose success tar -cvf - <file list elided>
+verbose success gzip "--stdout"
+verbose mkdir (expected) error ENOENT, No such file or directory '/tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents'
+verbose mkdir (expected) error ENOENT, No such file or directory '/tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm'
+verbose mkdir done: /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm 755
+verbose unpack_ uid, gid [ 501, 20 ]
+verbose unpackTarget /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/package
+silly gunzTarPerm modes [ '755', '644' ]
+verbose success gzip "--decompress" "--stdout" "/tmp/npm-1316668344087/1316668344087-0.16812681895680726/tmp.tgz"
+verbose success tar "-mvxpf" "-" "-o" "-C" "/tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm"
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/.gitignore
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/package.json
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/README.md
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/examples/
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/examples/slug.js
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/lib/
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/lib/app.js
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/lib/factory.js
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/lib/index.js
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/lib/process.js
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/lib/slug.js
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/lib/checkout/
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/lib/checkout/fs.js
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/lib/checkout/git
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/lib/checkout/git.js
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/lib/checkout/index.js
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/lib/checkout/slug.js
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/lib/link/
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/lib/link/index.js
+silly asyncMap in gTP /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup/lib/link/javascript.js
+verbose gunzed /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup
+verbose rm'ed /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/package
+verbose renamed [ '/tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/___package.npm/gittyup',
+verbose renamed   '/tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/package' ]
+silly testEngine { name: 'gittyup',
+silly testEngine   descriptions: 'easy git deployment for node.js apps',
+silly testEngine   version: '0.0.7',
+silly testEngine   author: { name: 'Craig Condon', email: 'craig@spiceapps.com' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/spiceapps/gittyup.git' },
+silly testEngine   main: './lib/index.js',
+silly testEngine   dependencies: { sk: '*', structr: '*', 'node-fs': '*', gumbo: '*' },
+silly testEngine   os: [ 'linux', 'darwin', 'freebsd' ],
+silly testEngine   _npmJsonOpts: 
+silly testEngine    { file: '/tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/package/package.json',
+silly testEngine      wscript: false,
+silly testEngine      contributors: false,
+silly testEngine      serverjs: false },
+silly testEngine   _id: 'gittyup@0.0.7',
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.27',
+silly testEngine   _nodeVersion: 'v0.4.11',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/package' }
+verbose caching /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/package/package.json
+verbose loadDefaults gittyup@0.0.7
+verbose tarball contents [ 'package' ]
+verbose from cache /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/package/package.json
+verbose pack /tmp/npm-1316668344087/1316668344087-0.16812681895680726/contents/package /Users/craigcondon/.npm/gittyup/0.0.7/package.tgz
+verbose mkdir'ed /Users/craigcondon/.npm/gittyup/0.0.7
+verbose tar about to write tar and gzip it.
+silly tar args [ '-cvf',
+silly tar args   '-',
+silly tar args   'package/.gitignore',
+silly tar args   'package/package.json',
+silly tar args   'package/README.md',
+silly tar args   'package/examples/slug.js',
+silly tar args   'package/lib/app.js',
+silly tar args   'package/lib/factory.js',
+silly tar args   'package/lib/index.js',
+silly tar args   'package/lib/process.js',
+silly tar args   'package/lib/slug.js',
+silly tar args   'package/lib/checkout/fs.js',
+silly tar args   'package/lib/checkout/git',
+silly tar args   'package/lib/checkout/git.js',
+silly tar args   'package/lib/checkout/index.js',
+silly tar args   'package/lib/checkout/slug.js',
+silly tar args   'package/lib/link/index.js',
+silly tar args   'package/lib/link/javascript.js' ]
+verbose success tar -cvf - <file list elided>
+verbose success gzip "--stdout"
+verbose mkdir (expected) error ENOENT, No such file or directory '/Users/craigcondon/.npm/gittyup/0.0.7/___package.npm'
+verbose mkdir done: /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm 755
+verbose unpack_ uid, gid [ 501, 20 ]
+verbose unpackTarget /Users/craigcondon/.npm/gittyup/0.0.7/package
+silly gunzTarPerm modes [ '755', '644' ]
+verbose success gzip "--decompress" "--stdout" "/Users/craigcondon/.npm/gittyup/0.0.7/package.tgz"
+verbose success tar "-mvxpf" "-" "-o" "-C" "/Users/craigcondon/.npm/gittyup/0.0.7/___package.npm"
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/.gitignore
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/package.json
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/README.md
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/examples/
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/examples/slug.js
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/lib/
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/lib/app.js
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/lib/factory.js
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/lib/index.js
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/lib/process.js
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/lib/slug.js
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/lib/checkout/
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/lib/checkout/fs.js
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/lib/checkout/git
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/lib/checkout/git.js
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/lib/checkout/index.js
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/lib/checkout/slug.js
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/lib/link/
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/lib/link/index.js
+silly asyncMap in gTP /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package/lib/link/javascript.js
+verbose gunzed /Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package
+verbose rm'ed /Users/craigcondon/.npm/gittyup/0.0.7/package
+verbose renamed [ '/Users/craigcondon/.npm/gittyup/0.0.7/___package.npm/package',
+verbose renamed   '/Users/craigcondon/.npm/gittyup/0.0.7/package' ]
+silly testEngine { name: 'gittyup',
+silly testEngine   descriptions: 'easy git deployment for node.js apps',
+silly testEngine   version: '0.0.7',
+silly testEngine   author: { name: 'Craig Condon', email: 'craig@spiceapps.com' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/spiceapps/gittyup.git' },
+silly testEngine   main: './lib/index.js',
+silly testEngine   dependencies: { sk: '*', structr: '*', 'node-fs': '*', gumbo: '*' },
+silly testEngine   os: [ 'linux', 'darwin', 'freebsd' ],
+silly testEngine   _npmJsonOpts: 
+silly testEngine    { file: '/Users/craigcondon/.npm/gittyup/0.0.7/package/package.json',
+silly testEngine      wscript: false,
+silly testEngine      contributors: false,
+silly testEngine      serverjs: false },
+silly testEngine   _id: 'gittyup@0.0.7',
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.27',
+silly testEngine   _nodeVersion: 'v0.4.11',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   dist: 
+silly testEngine    { shasum: 'd08e63c8b6a9657da0013d90f80add264814f8da',
+silly testEngine      tarball: 'http://registry.npmjs.org/gittyup/-/gittyup-0.0.7.tgz' } }
+verbose caching /Users/craigcondon/.npm/gittyup/0.0.7/package/package.json
+verbose loadDefaults gittyup@0.0.7
+silly updated sha bytes 6114
+info shasum d08e63c8b6a9657da0013d90f80add264814f8da
+info shasum /Users/craigcondon/.npm/gittyup/0.0.7/package.tgz
+verbose from cache /Users/craigcondon/.npm/gittyup/0.0.7/package/package.json
+verbose chmod /Users/craigcondon/.npm/gittyup/0.0.7/package.tgz 644
+silly publish { name: 'gittyup',
+silly publish   descriptions: 'easy git deployment for node.js apps',
+silly publish   version: '0.0.7',
+silly publish   author: { name: 'Craig Condon', email: 'craig@spiceapps.com' },
+silly publish   repository: 
+silly publish    { type: 'git',
+silly publish      url: 'git://github.com/spiceapps/gittyup.git' },
+silly publish   main: './lib/index.js',
+silly publish   dependencies: { sk: '*', structr: '*', 'node-fs': '*', gumbo: '*' },
+silly publish   os: [ 'linux', 'darwin', 'freebsd' ],
+silly publish   _npmJsonOpts: 
+silly publish    { file: '/Users/craigcondon/.npm/gittyup/0.0.7/package/package.json',
+silly publish      wscript: false,
+silly publish      contributors: false,
+silly publish      serverjs: false },
+silly publish   _id: 'gittyup@0.0.7',
+silly publish   devDependencies: {},
+silly publish   engines: { node: '*' },
+silly publish   _engineSupported: true,
+silly publish   _npmVersion: '1.0.27',
+silly publish   _nodeVersion: 'v0.4.11',
+silly publish   _defaultsLoaded: true,
+silly publish   dist: 
+silly publish    { shasum: 'd08e63c8b6a9657da0013d90f80add264814f8da',
+silly publish      tarball: 'http://registry.npmjs.org/gittyup/-/gittyup-0.0.7.tgz' } }
+verbose PUT gittyup
+verbose raw, before any munging gittyup
+verbose url resolving [ 'https://registry.npmjs.org/', './gittyup' ]
+verbose url resolved https://registry.npmjs.org/gittyup
+verbose url parsed { protocol: 'https:',
+verbose url parsed   slashes: true,
+verbose url parsed   host: 'registry.npmjs.org',
+verbose url parsed   hostname: 'registry.npmjs.org',
+verbose url parsed   href: 'https://registry.npmjs.org/gittyup',
+verbose url parsed   pathname: '/gittyup' }
+silly writing json { _id: 'gittyup',
+silly writing json   name: 'gittyup',
+silly writing json   description: undefined,
+silly writing json   'dist-tags': {},
+silly writing json   versions: {},
+silly writing json   maintainers: 
+silly writing json    [ { name: 'architectd',
+silly writing json        email: 'craig.j.condon@gmail.com' } ] }
+verbose response https://registry.npmjs.org/gittyup
+silly chunk {"error":"conflict","reason":"Document update conflict."}
+silly chunk 
+verbose GET gittyup
+verbose raw, before any munging gittyup
+verbose url resolving [ 'https://registry.npmjs.org/', './gittyup' ]
+verbose url resolved https://registry.npmjs.org/gittyup
+verbose url parsed { protocol: 'https:',
+verbose url parsed   slashes: true,
+verbose url parsed   host: 'registry.npmjs.org',
+verbose url parsed   hostname: 'registry.npmjs.org',
+verbose url parsed   href: 'https://registry.npmjs.org/gittyup',
+verbose url parsed   pathname: '/gittyup' }
+verbose response https://registry.npmjs.org/gittyup
+silly chunk {"_id":"gittyup","_rev":"33-52372452d24e412a63b7e4378188bc4c","name":"gittyup","dist-tags":{"latest":"0.0.7"},"versions":{"0.0.1":{"name":"gittyup","descriptions":"easy git deployment for node.js apps","version":"0.0.1","author":{"name":"Craig Condon","email":"craig@spiceapps.com"},"bin":{"beet":"./bin/beandocs"},"repository":{"type":"git","url":"git://github.com/spiceapps/gittyup.git"},"main":"./lib/index.js","dependencies":{"structr":"*","node-fs":"*","gumbo":"*","ini":"*","beet":"*"},"os":["linux","darwin","freebsd"],"_npmJsonOpts":{"file":"/Users/craigcondon/.npm/gittyup/0.0.1/package/package.json","wscript":false,"contributors":false,"serverjs":false},"_id":"gittyup@0.0.1","devDependencies":{},"engines":{"node":"*"},"_engineSupported":true,"_npmVersion":"1.0.27","_nodeVersion":"v0.4.11","_defaultsLoaded":true,"dist":{"shasum":"1c45fcc880214b66b8d2bd482cb568ec3ca96ec0","tarball":"http://registry.npmjs.org/gittyup/-/gittyup-0.0.1.tgz"},"maintainers":[{"name":"architectd","email":"craig.j.condon@gmail.com"}],"directories":{}},"0.0.2":{"name":"gittyup","descriptions":"easy git deployment for node.js apps","version":"0.0.2","author":{"name":"Craig Condon","email":"craig@spiceapps.com"},"bin":{"beet":"./bin/beandocs"},"repository":{"type":
+silly chunk "git","url":"git://github.com/spiceapps/gittyup.git"},"main":"./lib/index.js","dependencies":{"structr":"*","node-fs":"*","gumbo":"*","ini":"*","beet":"*"},"os":["linux","darwin","freebsd"],"_npmJsonOpts":{"file":"/Users/craigcondon/.npm/gittyup/0.0.2/package/package.json","wscript":false,"contributors":false,"serverjs":false},"_id":"gittyup@0.0.2","devDependencies":{},"engines":{"node":"*"},"_engineSupported":true,"_npmVersion":"1.0.27","_nodeVersion":"v0.4.11","_defaultsLoaded":true,"dist":{"shasum":"80b1be5a161b2348e544b16d44eb0135b7daeebe","tarball":"http://registry.npmjs.org/gittyup/-/gittyup-0.0.2.tgz"},"maintainers":[{"name":"architectd","email":"craig.j.condon@gmail.com"}],"directories":{}},"0.0.4":{"name":"gittyup","descriptions":"easy git deployment for node.js apps","version":"0.0.4","author":{"name":"Craig Condon","email":"craig@spiceapps.com"},"repository":{"type":"git","url":"git://github.com/spiceapps/gittyup.git"},"main":"./lib/index.js","dependencies":{"structr":"*","node-fs":"*","gumbo":"*","ini":"*","beet":"*"},"os":["linux","darwin","freebsd"],"_npmJsonOpts":{"file":"/Users/craigcondon/.npm/gittyup/0.0.4/package/package.json","wscript":false,"contributors":false,"serverjs":false},"_id":"gittyup@0.0.4","devDependencies":{},"engines":{"node":"*"},"_engineSupported":true,"_npmVersion":"1.0.27","_nodeVersion":"v0.4.11","_defaultsLoaded":true,"dist":{"shasum":"64691a0338bd1fc40b9da56465af5de98954ae28","tarball":"http://re
+silly chunk gistry.npmjs.org/gittyup/-/gittyup-0.0.4.tgz"},"maintainers":[{"name":"architectd","email":"craig.j.condon@gmail.com"}],"directories":{}},"0.0.5":{"name":"gittyup","descriptions":"easy git deployment for node.js apps","version":"0.0.5","author":{"name":"Craig Condon","email":"craig@spiceapps.com"},"repository":{"type":"git","url":"git://github.com/spiceapps/gittyup.git"},"main":"./lib/index.js","dependencies":{"structr":"*","node-fs":"*","gumbo":"*","ini":"*","beet":"*"},"os":["linux","darwin","freebsd"],"_npmJsonOpts":{"file":"/Users/craigcondon/.npm/gittyup/0.0.5/package/package.json","wscript":false,"contributors":false,"serverjs":false},"_id":"gittyup@0.0.5","devDependencies":{},"engines":{"node":"*"},"_engineSupported":true,"_npmVersion":"1.0.27","_nodeVersion":"v0.4.11","_defaultsLoaded":true,"dist":{"shasum":"14d496831e989d7ca02096ab438b859aa00aa305","tarball":"http://registry.npmjs.org/gittyup/-/gittyup-0.0.5.tgz"},"maintainers":[{"name":"architectd","email":"craig.j.condon@gmail.com"}],"directories":{}},"0.0.6":{"name":"gittyup","descriptions":"easy git deployment for node.js apps","version":"0.0.6","author":{"name":"Craig Condon","email":"craig@spiceapps.com"},"repository":{"type":"git","url":"git://github.com/spiceapps/gittyup.git"},"main":"./lib/index.js","dependencies":{"sk":"*","structr":"*","node-fs":"*","gumbo":"*"},"os":["linux","darwin","freebsd"],"_npmJsonOpts":{"file":"/Users/craigcondon/.npm/gittyup/0.0.6/package/package.json","wscript":false,"contributors":false,"serverjs":false},"_id":"gittyup@0.0.6","devDependencies":{},"engines":{"node":"*"},"_engineSupported":true,"_npmVersion":"1.0.27","_nodeVersion":"v0.4.11","_defaultsLoaded":true,"dist":{"shasum":"6664b1d4bce868481bb975d70f2976325bb3436c","tarball":"http://registry.npmjs.org/gittyup/-/gittyup-0.0.6.tgz"},"maintainers":[{"name":"architectd","email":"craig.j.condon@gmail.com"}],"directories":{}},"0.0.7":{"name":"gittyup","descriptions":"easy git deployment for node.js apps","version":"0.0.7","author":{"name":"Craig Condon","email":"craig@spiceapps.com"},"repository":{"type":"git","url":"git://github.com/spiceapps/gittyup.git"},"main":"./lib/index.js","dependencies":{"sk":"*","structr":"*","node-fs":"*","gumbo":"*"},"os":["linux","darwin","freebsd"],"_npmJsonOpts":{"file":"/Users/craigcondon/.npm/gittyup/0.0.7/package/package.json","wscript":false,"contributors":false,"serverjs":false},"_id":"gittyup@0.0.7","devDependencies":{},"engines":{"node":"*"},"_engineSupported":true,"_npmVersion":"1.0.27","_nodeVersion":"v0.4.11","_defaultsLoaded":true,"dist":{"shasum":"b8f02faadb42c90098f04851700bb0cafda193ad","tarball":"http://registry.npmjs.org/gittyup/-/gittyup-0.0.7.tgz"},"maintainers":[{"name":"architectd","email":"craig.j.condon@gmail.com"}],"directories":{}}},"maintainers":[{"name":"architectd","email":"craig.j.condon@gmail.com"}],"time":{"0.0.1":"2011-09-18T13:28:06.502Z","0.0.2":"2011-09-18T13:49:34.672Z","0.0.4":"2011-09-19T02:14:04.071Z","0.0.5":"2011-09-20T04:01:28.725Z","0.0.6":"2011-09-21T17:42:15.681Z","0.0.7":"2011-09-22T04:35:32.437Z"},"author":{"name":"Craig Condon","email":"craig@spiceapps.com"},"repository":{"type":"git","url":"git://github.com/spiceapps/gittyup.git"}}
+info Already published gittyup@0.0.7
+verbose uploading bin dists []
+ERR! publish fail Cannot publish over existing version.
+ERR! publish fail Bump the 'version' field, set the --force flag, or
+ERR! publish fail     npm unpublish 'gittyup@0.0.7'
+ERR! publish fail and try again
+ERR! 
+ERR! System Darwin 10.8.0
+ERR! command "node" "/usr/local/bin/npm" "publish"
+ERR! cwd /Users/craigcondon/Developer/Jobs/Spice/spice.io/node/gittyup
+ERR! node -v v0.4.11
+ERR! npm -v 1.0.27
+verbose exit [ 1, true ]
