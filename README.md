@@ -27,14 +27,18 @@ app = gittyup.app('myApp');
 
 app.checkout('myProjectSource', function(err, result)
 {
+
+	//something went wrong in the checkout phase - most likely in linking, rollback
+	if(err) return app.rollback();
 	
 	//test to make sure everythings good
 	app.test(function(err, result)
 	{
-		//rollback!
+		//something went wrong in the testing phase, rollback
 		if(err) return app.rollback();
 
 
+		//start upp the application
 		app.process(function(err, process)
 		{
 			process.start();
