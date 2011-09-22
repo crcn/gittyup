@@ -5,39 +5,175 @@ Gittyup is a node.js deplyment utility with some slick features:
 - Supports any language (I Think...)
 
 
-Example:
+#### To Do:
+
+- Storage transports: rackspace, amazon aws, etc
+- .slugignore
+
+
+
+### Documentation
+
+
+#### .gittyup(rootDirectory)
+
+root directory by default is /etc/gittyup/
 
 ```javascript
 
+var gittyup = require('gittyup')('/etc/bonsai/garden/'),
+app = gittyup.app('myApp');
 
-var gittyup = require('gittyup'),
-app = gittyup.app('test-app');
 
-app.checkout('git@github.com:spiceapps/gittyup-test.git', function(err, result)
+app.checkout('myProjectSource', function(err, result)
 {
-	//test to make sure it's working properly
-	app.test(err, result)
+	
+	//test to make sure everythings good
+	app.test(function(err, result)
 	{
-		if(err)
+		//rollback!
+		if(err) return app.rollback();
+
+
+		app.process(function(err, process)
 		{
-			//rollback to the last working repo.
-			return app.rollback();
-		}	
+			process.start();
+		});
+	});
+});
+
+//...
+
+```
+
+
+#### .app(ops)
+
+First argument can be either a string (app name), or object
+
+##### arguments
+	
+	* `name` - The name of the application.
+	* `group` - The group the application is in.
+	* `maxRecords` -  Maximum number of application records to keep locally.
+
+
+#### .app().checkout(source, callback)
+
+From a git repository:
+
+```javascript
+
+gittyup.app('myApp').checkout('git@github.com:spiceapps/gittyup-test.git', function(err, result)
+{
+	//do stuff!
+});
+
+```
+
+From a generated slug:
+
+```javascript
+
+gittyup.app('myApp').checkout('http://mydomain.com/someApp.slug', function(err, result)
+{
+});
+
+```
+
+From a local directory:
+
+```javascript
+
+gittyup.app('myApp').checkout('/some/local/path', function(err, result)
+{
+	
+});
+
+```
+
+#### .app().process(callback)
+
+Returns a runnable process of the most recent checked out item.
+
+
+````javascript
+
+
+gittyup.app('myApp').process(function(err, process)
+{
+
+	process.start(function(err, result)
+	{
+		//...
+	});
+
+	process.stop(function(err, result)
+	{
+		//...
+	});
+
+	process.restart(function(err, result)
+	{
+		//...
 	});
 });
 
 
+```
+
+#### .app().test(callback)
+
+Tests the most recent checked out item. Make sure to include "scripts:test" in your package.json. Something like:
+
+```javascript
 
 
-app.addListener('update', function()
 {
-	//start application logic here	
-});
+    "name": "myApp",
 
-
-app.addListener('remove', function()
-{
-	//remove application logic here
-});
-
+    "scripts": {
+    	"test": "./test"
+    }
+}
 ````
+
+When exiting the test program, an exit code of 0 tells gittyup the test was successful, whereas 1 tells gittyup the test failed.
+
+
+### .app().current(callback)
+
+Returns Information about the current checked out item.
+
+### .app().history(callback)
+
+Returns checkout history of the given application.
+
+### .app().use(checkoutId)
+
+Uses a previously used checkout item without removing the current one.
+
+### .app().remove(checkoutId, callback)
+
+Removes a checked out item.
+
+### .app().destroy(callback)
+
+Destroys the application, and all the checked out items.
+
+### .app().makeSlug(callback)
+
+Makes a slug out of the most recent checkout. Use this method if you need to move the application around between servers. 
+Once a slug is made, calling "makeSlug" on the same checkout will have no effect.
+
+
+```javascript
+
+gittyup.app('myApp').makeSlug(function(err, item)
+{
+	console.log(item.slug); // /etc/gittyup/apps/myApp/16767565434/slug/753a644f4e7aaa7fc9132be92d000002.tar.gz
+});
+
+```
+
+
