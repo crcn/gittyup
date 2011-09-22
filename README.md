@@ -10,6 +10,7 @@ Gittyup is a node.js deplyment utility with some slick features:
 
 - Storage transports: rackspace, amazon aws, etc
 - .slugignore
+- Support for different types of apps: PHP, Java, etc.
 
 
 
