@@ -1,7 +1,7 @@
 {
     "name":"gittyup",
     "descriptions": "easy git deployment for node.js apps",
-    "version": "0.0.19",
+    "version": "0.0.20",
     "author": "Craig Condon <craig@spiceapps.com>",
     "repository": {
         "type": "git",
