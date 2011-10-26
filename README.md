@@ -31,7 +31,8 @@ app.checkout('myProjectSource', function(err, result)
 {
 
 	//something went wrong in the checkout phase - most likely in linking, rollback
-	if(err) return app.rollback();
+	if(err) return app.rollback();  
+	             
 	
 	//test to make sure everythings good
 	app.test(function(err, result)
