@@ -52,27 +52,27 @@ silly testEngine   _defaultsLoaded: true,
 silly testEngine   path: '/Users/craig/Dropbox/Developer/Public/gittyup' }
 verbose caching package.json
 verbose loadDefaults gittyup@0.0.21
-verbose pack /Users/craig/Dropbox/Developer/Public/gittyup /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/tmp.tgz
-verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155'
-verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607'
-verbose mkdir done: /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607 755
-verbose mkdir'ed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607
+verbose pack /Users/craig/Dropbox/Developer/Public/gittyup /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/tmp.tgz
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234'
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295'
+verbose mkdir done: /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295 755
+verbose mkdir'ed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295
 verbose tar about to write tar and gzip it.
 silly tar args [ '-czvf', '-', '-T', '-' ]
 silly spawning [ 'tar',
 silly spawning   [ '-czvf', '-', '-T', '-' ],
 silly spawning   '/Users/craig/Dropbox/Developer/Public' ]
-verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents'
-verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm'
-verbose mkdir done: /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm 755
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents'
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm'
+verbose mkdir done: /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm 755
 verbose unpack_ uid, gid [ undefined, undefined ]
-verbose unpackTarget /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/package
+verbose unpackTarget /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/package
 silly gunzTarPerm modes [ '755', '644' ]
 silly spawning [ 'tar',
 silly spawning   [ '-zmvxpf',
-silly spawning     '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/tmp.tgz',
+silly spawning     '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/tmp.tgz',
 silly spawning     '-o' ],
-silly spawning   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm' ]
+silly spawning   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm' ]
 silly tar err x gittyup/.cupboard
 silly tar err x gittyup/.gitignore
 silly tar err x gittyup/package.json
@@ -90,32 +90,32 @@ silly tar err x gittyup/lib/checkout/index.js
 silly tar err x gittyup/lib/checkout/slug.js
 silly tar err x gittyup/lib/link/index.js
 silly tar err x gittyup/lib/link/javascript.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/.cupboard
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/.gitignore
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/package.json
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/README.md
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/examples
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/examples/slug.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/lib
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/lib/app.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/lib/factory.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/lib/index.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/lib/process.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/lib/slug.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/lib/checkout
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/lib/checkout/fs.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/lib/checkout/git
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/lib/checkout/git.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/lib/checkout/index.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/lib/checkout/slug.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/lib/link
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/lib/link/index.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup/lib/link/javascript.js
-verbose gunzed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup
-verbose rm'ed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/package
-verbose renamed [ '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/___package.npm/gittyup',
-verbose renamed   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/package' ]
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/.cupboard
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/.gitignore
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/package.json
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/README.md
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/examples
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/examples/slug.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/lib
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/lib/app.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/lib/factory.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/lib/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/lib/process.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/lib/slug.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/lib/checkout
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/lib/checkout/fs.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/lib/checkout/git
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/lib/checkout/git.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/lib/checkout/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/lib/checkout/slug.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/lib/link
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/lib/link/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup/lib/link/javascript.js
+verbose gunzed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup
+verbose rm'ed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/package
+verbose renamed [ '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/___package.npm/gittyup',
+verbose renamed   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/package' ]
 silly testEngine { name: 'gittyup',
 silly testEngine   descriptions: 'easy git deployment for node.js apps',
 silly testEngine   version: '0.0.21',
@@ -134,18 +134,18 @@ silly testEngine   _engineSupported: true,
 silly testEngine   _npmVersion: '1.0.103',
 silly testEngine   _nodeVersion: 'v0.4.12',
 silly testEngine   _defaultsLoaded: true,
-silly testEngine   path: '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/package' }
-verbose caching /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/package/package.json
+silly testEngine   path: '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/package' }
+verbose caching /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/package/package.json
 verbose loadDefaults gittyup@0.0.21
 verbose tarball contents [ 'package' ]
-verbose from cache /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/package/package.json
-verbose pack /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents/package /Users/craig/.npm/gittyup/0.0.21/package.tgz
+verbose from cache /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/package/package.json
+verbose pack /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents/package /Users/craig/.npm/gittyup/0.0.21/package.tgz
 verbose mkdir'ed /Users/craig/.npm/gittyup/0.0.21
 verbose tar about to write tar and gzip it.
 silly tar args [ '-czvf', '-', '-T', '-' ]
 silly spawning [ 'tar',
 silly spawning   [ '-czvf', '-', '-T', '-' ],
-silly spawning   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526663155-0.8585103831719607/contents' ]
+silly spawning   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983234/1320526983234-0.6670436908025295/contents' ]
 verbose mkdir (expected) error ENOENT, No such file or directory '/Users/craig/.npm/gittyup/0.0.21/___package.npm'
 verbose mkdir done: /Users/craig/.npm/gittyup/0.0.21/___package.npm 755
 verbose unpack_ uid, gid [ undefined, undefined ]
@@ -158,8 +158,8 @@ silly spawning     '-o' ],
 silly spawning   '/Users/craig/.npm/gittyup/0.0.21/___package.npm' ]
 silly tar err x package/.cupboard
 silly tar err x package/.gitignore
-silly tar err x package/README.md
 silly tar err x package/package.json
+silly tar err x package/README.md
 silly tar err x package/examples/slug.js
 silly tar err x package/lib/app.js
 silly tar err x package/lib/factory.js
@@ -218,12 +218,12 @@ silly testEngine   _npmVersion: '1.0.103',
 silly testEngine   _nodeVersion: 'v0.4.12',
 silly testEngine   _defaultsLoaded: true,
 silly testEngine   dist: 
-silly testEngine    { shasum: '4a891b8f0ec9b6df13008e3cce94c63399f582ed',
+silly testEngine    { shasum: 'd2de00e84475b3463fb1a842c0df4fd98fa601ac',
 silly testEngine      tarball: 'http://registry.npmjs.org/gittyup/-/gittyup-0.0.21.tgz' } }
 verbose caching /Users/craig/.npm/gittyup/0.0.21/package/package.json
 verbose loadDefaults gittyup@0.0.21
 silly updated sha bytes 10240
-info shasum 987c890dffd75080523c1ce3817971649d4159a1
+info shasum d2de00e84475b3463fb1a842c0df4fd98fa601ac
 info shasum /Users/craig/.npm/gittyup/0.0.21/package.tgz
 verbose from cache /Users/craig/.npm/gittyup/0.0.21/package/package.json
 verbose chmod /Users/craig/.npm/gittyup/0.0.21/package.tgz 644
@@ -249,238 +249,7 @@ silly publish   _npmVersion: '1.0.103',
 silly publish   _nodeVersion: 'v0.4.12',
 silly publish   _defaultsLoaded: true,
 silly publish   dist: 
-silly publish    { shasum: '4a891b8f0ec9b6df13008e3cce94c63399f582ed',
-silly publish      tarball: 'http://registry.npmjs.org/gittyup/-/gittyup-0.0.21.tgz' } }
-verbose PUT gittyup
-verbose raw, before any munging gittyup
-verbose url resolving [ 'https://registry.npmjs.org/', './gittyup' ]
-verbose url resolved https://registry.npmjs.org/gittyup
-verbose GET gittyup
-verbose raw, before any munging gittyup
-verbose url resolving [ 'https://registry.npmjs.org/', './gittyup' ]
-verbose url resolved https://registry.npmjs.org/gittyup
-info Already published gittyup@0.0.21
-verbose uploading bin dists []
-WARN publish Forced publish over gittyup@0.0.21
-verbose GET gittyup
-verbose raw, before any munging gittyup
-verbose url resolving [ 'https://registry.npmjs.org/', './gittyup' ]
-verbose url resolved https://registry.npmjs.org/gittyup
-silly get cb [ 200,
-silly get cb   { vary: 'Accept',
-silly get cb     server: 'CouchDB/1.1.1 (Erlang OTP/R14B04)',
-silly get cb     etag: '"B1PBNB709UGREQVPZEHMWJZ1I"',
-silly get cb     date: 'Sat, 05 Nov 2011 20:57:47 GMT',
-silly get cb     'content-type': 'application/json',
-silly get cb     'content-length': '18230' } ]
-verbose removing attachments { shasum: '2058601e97c1345d32cd677d8e9f33da562f4404',
-verbose removing attachments   tarball: 'http://registry.npmjs.org/gittyup/-/gittyup-0.0.21.tgz' }
-verbose PUT gittyup/-rev/89-eab2bb8a4c9fa0f7803c45390c6badbe
-verbose raw, before any munging gittyup/-rev/89-eab2bb8a4c9fa0f7803c45390c6badbe
-verbose url resolving [ 'https://registry.npmjs.org/',
-verbose url resolving   './gittyup/-rev/89-eab2bb8a4c9fa0f7803c45390c6badbe' ]
-verbose url resolved https://registry.npmjs.org/gittyup/-rev/89-eab2bb8a4c9fa0f7803c45390c6badbe
-verbose GET gittyup
-verbose raw, before any munging gittyup
-verbose url resolving [ 'https://registry.npmjs.org/', './gittyup' ]
-verbose url resolved https://registry.npmjs.org/gittyup
-silly get cb [ 200,
-silly get cb   { vary: 'Accept',
-silly get cb     server: 'CouchDB/1.1.1 (Erlang OTP/R14B04)',
-silly get cb     etag: '"3QRB5VJDP3NIPHUYP85FLSYK9"',
-silly get cb     date: 'Sat, 05 Nov 2011 20:57:49 GMT',
-silly get cb     'content-type': 'application/json',
-silly get cb     'content-length': '17392' } ]
-info detach /gittyup/-/gittyup-0.0.21.tgz/-rev/90-ff51483a9f5d89e897f757f3f77c1604
-verbose DELETE /gittyup/-/gittyup-0.0.21.tgz/-rev/90-ff51483a9f5d89e897f757f3f77c1604
-verbose raw, before any munging /gittyup/-/gittyup-0.0.21.tgz/-rev/90-ff51483a9f5d89e897f757f3f77c1604
-verbose url resolving [ 'https://registry.npmjs.org/',
-verbose url resolving   './gittyup/-/gittyup-0.0.21.tgz/-rev/90-ff51483a9f5d89e897f757f3f77c1604' ]
-verbose url resolved https://registry.npmjs.org/gittyup/-/gittyup-0.0.21.tgz/-rev/90-ff51483a9f5d89e897f757f3f77c1604
-verbose publish [ '.' ]
-verbose from cache /Users/craig/Dropbox/Developer/Public/gittyup/package.json
-info prepublish gittyup@0.0.21
-verbose cache add [ '.', null ]
-silly cache add: name, spec, args [ undefined, '.', [ '.', null ] ]
-verbose parsed url { pathname: '.', href: '.' }
-verbose from cache package.json
-verbose pack /Users/craig/Dropbox/Developer/Public/gittyup /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/tmp.tgz
-verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551'
-verbose mkdir done: /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551 755
-verbose mkdir'ed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551
-verbose tar about to write tar and gzip it.
-silly tar args [ '-czvf', '-', '-T', '-' ]
-silly spawning [ 'tar',
-silly spawning   [ '-czvf', '-', '-T', '-' ],
-silly spawning   '/Users/craig/Dropbox/Developer/Public' ]
-verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents'
-verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm'
-verbose mkdir done: /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm 755
-verbose unpack_ uid, gid [ undefined, undefined ]
-verbose unpackTarget /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/package
-silly gunzTarPerm modes [ '755', '644' ]
-silly spawning [ 'tar',
-silly spawning   [ '-zmvxpf',
-silly spawning     '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/tmp.tgz',
-silly spawning     '-o' ],
-silly spawning   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm' ]
-silly tar err x gittyup/.cupboard
-silly tar err x gittyup/.gitignore
-silly tar err x gittyup/package.json
-silly tar err x gittyup/README.md
-silly tar err x gittyup/examples/slug.js
-silly tar err x gittyup/lib/app.js
-silly tar err x gittyup/lib/factory.js
-silly tar err x gittyup/lib/index.js
-silly tar err x gittyup/lib/process.js
-silly tar err x gittyup/lib/slug.js
-silly tar err x gittyup/lib/checkout/fs.js
-silly tar err x gittyup/lib/checkout/git
-silly tar err x gittyup/lib/checkout/git.js
-silly tar err x gittyup/lib/checkout/index.js
-silly tar err x gittyup/lib/checkout/slug.js
-silly tar err x gittyup/lib/link/index.js
-silly tar err x gittyup/lib/link/javascript.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/.gitignore
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/.cupboard
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/package.json
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/README.md
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/examples
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/examples/slug.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/lib
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/lib/app.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/lib/factory.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/lib/index.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/lib/process.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/lib/slug.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/lib/checkout
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/lib/checkout/fs.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/lib/checkout/git
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/lib/checkout/git.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/lib/checkout/index.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/lib/checkout/slug.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/lib/link
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/lib/link/index.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup/lib/link/javascript.js
-verbose gunzed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup
-verbose rm'ed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/package
-verbose renamed [ '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/___package.npm/gittyup',
-verbose renamed   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/package' ]
-silly testEngine { name: 'gittyup',
-silly testEngine   descriptions: 'easy git deployment for node.js apps',
-silly testEngine   version: '0.0.21',
-silly testEngine   author: { name: 'Craig Condon', email: 'craig@spiceapps.com' },
-silly testEngine   repository: 
-silly testEngine    { type: 'git',
-silly testEngine      url: 'git://github.com/spiceapps/gittyup.git' },
-silly testEngine   main: './lib/index.js',
-silly testEngine   dependencies: { structr: '*', 'node-fs': '*', gumbo: '*' },
-silly testEngine   os: [ 'linux', 'darwin', 'freebsd' ],
-silly testEngine   _npmUser: { name: 'architectd', email: 'craig@spiceapps.com' },
-silly testEngine   _id: 'gittyup@0.0.21',
-silly testEngine   devDependencies: {},
-silly testEngine   engines: { node: '*' },
-silly testEngine   _engineSupported: true,
-silly testEngine   _npmVersion: '1.0.103',
-silly testEngine   _nodeVersion: 'v0.4.12',
-silly testEngine   _defaultsLoaded: true,
-silly testEngine   path: '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/package' }
-verbose caching /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/package/package.json
-verbose loadDefaults gittyup@0.0.21
-verbose tarball contents [ 'package' ]
-verbose from cache /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/package/package.json
-verbose pack /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents/package /Users/craig/.npm/gittyup/0.0.21/package.tgz
-verbose mkdir (expected) error ENOENT, No such file or directory '/Users/craig/.npm/gittyup/0.0.21'
-verbose mkdir done: /Users/craig/.npm/gittyup/0.0.21 755
-verbose mkdir'ed /Users/craig/.npm/gittyup/0.0.21
-verbose tar about to write tar and gzip it.
-silly tar args [ '-czvf', '-', '-T', '-' ]
-silly spawning [ 'tar',
-silly spawning   [ '-czvf', '-', '-T', '-' ],
-silly spawning   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663155/1320526668010-0.8524064929224551/contents' ]
-verbose mkdir (expected) error ENOENT, No such file or directory '/Users/craig/.npm/gittyup/0.0.21/___package.npm'
-verbose mkdir done: /Users/craig/.npm/gittyup/0.0.21/___package.npm 755
-verbose unpack_ uid, gid [ undefined, undefined ]
-verbose unpackTarget /Users/craig/.npm/gittyup/0.0.21/package
-silly gunzTarPerm modes [ '755', '644' ]
-silly spawning [ 'tar',
-silly spawning   [ '-zmvxpf',
-silly spawning     '/Users/craig/.npm/gittyup/0.0.21/package.tgz',
-silly spawning     '-o' ],
-silly spawning   '/Users/craig/.npm/gittyup/0.0.21/___package.npm' ]
-silly tar err x package/.cupboard
-silly tar err x package/.gitignore
-silly tar err x package/package.json
-silly tar err x package/README.md
-silly tar err x package/examples/slug.js
-silly tar err x package/lib/app.js
-silly tar err x package/lib/factory.js
-silly tar err x package/lib/index.js
-silly tar err x package/lib/process.js
-silly tar err x package/lib/slug.js
-silly tar err x package/lib/checkout/fs.js
-silly tar err x package/lib/checkout/git
-silly tar err x package/lib/checkout/git.js
-silly tar err x package/lib/checkout/index.js
-silly tar err x package/lib/checkout/slug.js
-silly tar err x package/lib/link/index.js
-silly tar err x package/lib/link/javascript.js
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/.cupboard
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/.gitignore
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/package.json
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/README.md
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/examples
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/examples/slug.js
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/lib
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/lib/app.js
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/lib/factory.js
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/lib/index.js
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/lib/process.js
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/lib/slug.js
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/lib/checkout
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/lib/checkout/fs.js
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/lib/checkout/git
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/lib/checkout/git.js
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/lib/checkout/index.js
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/lib/checkout/slug.js
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/lib/link
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/lib/link/index.js
-silly asyncMap in gTP /Users/craig/.npm/gittyup/0.0.21/___package.npm/package/lib/link/javascript.js
-verbose gunzed /Users/craig/.npm/gittyup/0.0.21/___package.npm/package
-verbose rm'ed /Users/craig/.npm/gittyup/0.0.21/package
-verbose renamed [ '/Users/craig/.npm/gittyup/0.0.21/___package.npm/package',
-verbose renamed   '/Users/craig/.npm/gittyup/0.0.21/package' ]
-verbose from cache /Users/craig/.npm/gittyup/0.0.21/package/package.json
-silly updated sha bytes 10240
-info shasum 4a891b8f0ec9b6df13008e3cce94c63399f582ed
-info shasum /Users/craig/.npm/gittyup/0.0.21/package.tgz
-verbose from cache /Users/craig/.npm/gittyup/0.0.21/package/package.json
-verbose chmod /Users/craig/.npm/gittyup/0.0.21/package.tgz 644
-verbose chown [ '/Users/craig/.npm/gittyup/0.0.21/package.tgz',
-verbose chown   501,
-verbose chown   20 ]
-silly publish { name: 'gittyup',
-silly publish   descriptions: 'easy git deployment for node.js apps',
-silly publish   version: '0.0.21',
-silly publish   author: { name: 'Craig Condon', email: 'craig@spiceapps.com' },
-silly publish   repository: 
-silly publish    { type: 'git',
-silly publish      url: 'git://github.com/spiceapps/gittyup.git' },
-silly publish   main: './lib/index.js',
-silly publish   dependencies: { structr: '*', 'node-fs': '*', gumbo: '*' },
-silly publish   os: [ 'linux', 'darwin', 'freebsd' ],
-silly publish   _npmUser: { name: 'architectd', email: 'craig@spiceapps.com' },
-silly publish   _id: 'gittyup@0.0.21',
-silly publish   devDependencies: {},
-silly publish   engines: { node: '*' },
-silly publish   _engineSupported: true,
-silly publish   _npmVersion: '1.0.103',
-silly publish   _nodeVersion: 'v0.4.12',
-silly publish   _defaultsLoaded: true,
-silly publish   dist: 
-silly publish    { shasum: '4a891b8f0ec9b6df13008e3cce94c63399f582ed',
+silly publish    { shasum: 'd2de00e84475b3463fb1a842c0df4fd98fa601ac',
 silly publish      tarball: 'http://registry.npmjs.org/gittyup/-/gittyup-0.0.21.tgz' } }
 verbose PUT gittyup
 verbose raw, before any munging gittyup
