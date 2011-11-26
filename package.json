@@ -2,10 +2,10 @@
     "name":"gittyup",
     "descriptions": "easy git deployment for node.js apps",
     "version": "0.0.21",
-    "author": "Craig Condon <craig@spiceapps.com>",
+    "author": "Craig Condon <craig@crcn.com>",
     "repository": {
         "type": "git",
-        "url": "http://github.com/spiceapps/gittyup.git"
+        "url": "http://github.com/crcn/gittyup.git"
     },
     "main": "./lib/index.js",
     "dependencies": {
