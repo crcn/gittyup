@@ -2,7 +2,22 @@
 	"folders":
 	[
 		{
-			"path": "/Users/craig/.cupboard/projects/gittyup"
+			"path": "."
+		}
+	],
+	"build_systems":
+	[
+		{
+			"name":"cbd make",
+			"cmd":["cbd","make","gittyup"]
+		},
+		{
+			"name":"cbd start",
+			"cmd":["cbd","start","gittyup"]
+		},
+		{
+			"name":"cbd make+start",
+			"cmd":["cbd","make+start","gittyup"]
 		}
 	]
 }
