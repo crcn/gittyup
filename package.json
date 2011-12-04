@@ -1,7 +1,7 @@
 {
-    "name":"gittyup",
+    "name": "gittyup",
     "descriptions": "easy git deployment for node.js apps",
-    "version": "0.0.21",
+    "version": "0.0.22",
     "author": "Craig Condon <craig@crcn.com>",
     "repository": {
         "type": "git",
@@ -9,9 +9,9 @@
     },
     "main": "./lib/index.js",
     "dependencies": {
-        "structr":"*",
-        "node-fs":"*",
-        "gumbo":"*"
+        "structr": "*",
+        "node-fs": "*",
+        "gumbo": "*"
     },
     "os": [
         "linux",
