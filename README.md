@@ -1,19 +1,14 @@
 Gittyup is a small node.js application deployment library similar to [n](/visionmedia/n)
 
 
-Gittyup is a node.js app deplyment library with some slick features:
+### Features
 
+- Command LIne Interface
 - Rollback support.
 - Script testing before using.
 - Start/Stop/Restart checked out apps.
 - Make a slug out of your app and easily move it quickly between servers.
 
-
-### To Do:
-
-- Storage transports: rackspace, amazon aws, etc
-- .slugignore
-- Support for different types of apps: PHP, Java, etc.
 
 ## Command Line
 
