@@ -1,4 +1,4 @@
-Gittyup is a small node.js application deployment library similar to [n]()
+Gittyup is a small node.js application deployment library similar to [n](/visionmedia/n)
 
 
 Gittyup is a node.js app deplyment library with some slick features:
