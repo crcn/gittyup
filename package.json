@@ -13,7 +13,8 @@
         "node-fs": "*",
         "gumbo": "<0.2.0",
         "celeri": "<0.3.0",
-        "yaconfig": "*"
+        "yaconfig": "*",
+        "moment":"*"
     },
     "bin": "./bin/gittyup",
     "os": [

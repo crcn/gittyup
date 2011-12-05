@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 var celeri = require('celeri'),
 gittyup    = require('../')(),
-cfg   = require('yaconfig').file('/etc/gittyup/apps.json');
+cfg   = require('yaconfig').file('/etc/gittyup/apps.json'),
+moment = require('moment');
 
 
 function gup(app) {
@@ -31,6 +32,50 @@ celeri.onCommand({ command: 'checkout :name :repo OR checkout :name', desc: 'che
 
 	em.on('error', function(){})
 });
+
+celeri.onCommand({ command: 'history :name', desc: 'Repo history'}, function(request) {
+
+	var data = this.data,
+	name = data.name,
+	gap = gup(name);
+
+	gap.history(function(err, items) {
+
+		items.sort(function(a, b) {
+			return a.createdAt > b.createdAt ? 1 : -1;
+		});
+
+		celeri.table(items, {
+			columns: [{
+				name: function(item) {
+					return 'r'+item.release;
+				}
+			},
+			{
+				name: function(item) {
+					return moment(item.createdAt).fromNow()
+				}
+			}]
+		})
+	});
+});
+
+celeri.onCommand({ command: 'rollback :name', desc: 'Rollback a repositoriy'}, function(request) {
+
+	var data = this.data,
+	name = data.name,
+	gap = gup(name);
+
+	gap.rollback(function(err, items) {
+		gap.process(function(err, process) {
+			process.restart(function(err, result) {
+				
+			});
+		});
+	});
+});
+
+
 
 
 
