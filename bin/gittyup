@@ -5,18 +5,17 @@ cfg   = require('yaconfig').file('/etc/gittyup/apps.json'),
 moment = require('moment');
 
 
-function gup(app) {
-	return gittyup.app({ name: app, maxRecords: 20 });
+function gup(app, max) {
+	return gittyup.app({ name: app, maxRecords: max });
 }
 
 celeri.onCommand({ command: 'checkout :name :repo OR checkout :name', desc: 'checks out a repository'}, function(request) {
 
 	var data = this.data,
 	name = data.name,
-	gap = gup(name),
+	gap = gup(name, data.records || 20),
 	repo = decodeURIComponent(data.repo || cfg.get(name+':repository'));
 
-	console.log(repo)
 
 	var em = gap.checkout(repo, function(err, result) {
 		
