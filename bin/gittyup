@@ -29,7 +29,13 @@ celeri.onCommand({ command: 'checkout :name :repo OR checkout :name', desc: 'che
 		});
 	});
 
-	em.on('error', function(){})
+	em.on('error', function(data) {
+		console.log(data);
+	});
+
+	em.on('data', function(data) {
+		console.log(data);
+	});
 });
 
 celeri.onCommand({ command: 'history :name', desc: 'Repo history'}, function(request) {
