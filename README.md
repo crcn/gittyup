@@ -12,7 +12,9 @@ Gittyup is a node.js deplyment library with some slick features:
 - .slugignore
 - Support for different types of apps: PHP, Java, etc.
 
+## Command Line
 
+	gittyup checkout daisy --repo=https://github.com/crcn/daisy.git
 
 ## Documentation
 

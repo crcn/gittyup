@@ -1,0 +1,38 @@
+#!/usr/bin/env node
+var celeri = require('celeri'),
+gittyup    = require('../')(),
+cfg   = require('yaconfig').file('/etc/gittyup/apps.json');
+
+
+function gup(app) {
+	return gittyup.app({ name: app, maxRecords: 20 });
+}
+
+celeri.onCommand({ command: 'checkout :name :repo OR checkout :name', desc: 'checks out a repository'}, function(request) {
+
+	var data = this.data,
+	name = data.name,
+	gap = gup(name),
+	repo = decodeURIComponent(data.repo || cfg.get(name+':repository'));
+
+	console.log(repo)
+
+	var em = gap.checkout(repo, function(err, result) {
+		
+		cfg.set(name+':repository', repo);
+
+		gap.process(function(err, process) {
+			
+			process.restart(function(err, result) {
+				
+			});
+		});
+	});
+
+	em.on('error', function(){})
+});
+
+
+
+
+celeri.parse(process.argv.splice(2));
