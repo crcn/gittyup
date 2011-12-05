@@ -14,8 +14,8 @@ Gittyup is a node.js deplyment library with some slick features:
 
 ## Command Line
 
-	gittyup checkout daisy --repo=https://github.com/crcn/daisy.git
-	
+	gup checkout daisy --repo=https://github.com/crcn/daisy.git
+
 ### Options
      help             
      rollback :name                                Rollback a repositoriy                                                   

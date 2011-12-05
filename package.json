@@ -16,7 +16,9 @@
         "yaconfig": "*",
         "moment":"*"
     },
-    "bin": "./bin/gittyup",
+    "bin": {
+        "gup":"./bin/gittyup"
+    },
     "os": [
         "linux",
         "darwin",
