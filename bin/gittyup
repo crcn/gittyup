@@ -9,6 +9,7 @@ function gup(app, max) {
 	return gittyup.app({ name: app, maxRecords: max });
 }
 
+
 celeri.onCommand({ command: 'checkout :name :repo OR checkout :name', desc: 'checks out a repository'}, function(request) {
 
 	var data = this.data,
@@ -38,6 +39,25 @@ celeri.onCommand({ command: 'checkout :name :repo OR checkout :name', desc: 'che
 	});
 });
 
+celeri.onCommand({ command: 'use :name :release', desc: 'Uses a repo'}, function(request) {
+
+	var data = this.data, gap = gup(data.name);
+
+	gap.findCheckout({ release: data.release.substr(1) }, function(err, item) {
+		if(!item) return console.error('release does not exist');
+		gap.use(item._id, function(err, item) { 
+			
+			gap.process(function(err, process) {
+				process.restart(function(err, result) {
+					
+				});
+			});
+		});
+	});
+
+	
+});
+
 celeri.onCommand({ command: 'history :name', desc: 'Repo history'}, function(request) {
 
 	var data = this.data,
@@ -46,22 +66,26 @@ celeri.onCommand({ command: 'history :name', desc: 'Repo history'}, function(req
 
 	gap.history(function(err, items) {
 
-		items.sort(function(a, b) {
-			return a.createdAt > b.createdAt ? 1 : -1;
-		});
+		gap.current(function(err, cur) {
+			
+			items.sort(function(a, b) {
+				return a.createdAt > b.createdAt ? 1 : -1;
+			});
 
-		celeri.table(items, {
-			columns: [{
-				name: function(item) {
-					return 'r'+item.release;
-				}
-			},
-			{
-				name: function(item) {
-					return moment(item.createdAt).fromNow()
-				}
-			}]
-		})
+			celeri.table(items, {
+				columns: [{
+					name: function(item) {
+						return (item.release == cur.release ? 'o' : '-')+' r'+item.release;
+					},
+					width: 10
+				},
+				{
+					name: function(item) {
+						return moment(item.createdAt).fromNow()
+					}
+				}]
+			});
+		});
 	});
 });
 
@@ -85,4 +109,4 @@ celeri.onCommand({ command: 'rollback :name', desc: 'Rollback a repositoriy'}, f
 
 
 
-celeri.parse(process.argv.splice(2));
+celeri.parse(process.argv);

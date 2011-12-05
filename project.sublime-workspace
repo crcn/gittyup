@@ -19,7 +19,15 @@
 			"file": "lib/app.js",
 			"settings":
 			{
-				"buffer_size": 8075,
+				"buffer_size": 8175,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin 6zaqkP.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -76,6 +84,38 @@
 			"settings":
 			{
 				"buffer_size": 1769,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bin/gittyup",
+			"settings":
+			{
+				"buffer_size": 1680,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin PYBdDv.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 612,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 3997,
 				"line_ending": "Unix"
 			}
 		}
@@ -164,6 +204,10 @@
 		"find_history":
 		[
 			"checkout",
+			"history",
+			"link",
+			"source",
+			"checkout",
 			"console.log",
 			".on(",
 			"using ",
@@ -223,7 +267,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 11,
 			"sheets":
 			[
 				{
@@ -257,15 +301,15 @@
 					"file": "lib/app.js",
 					"settings":
 					{
-						"buffer_size": 8075,
+						"buffer_size": 8175,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6125,
-								6125
+								1652,
+								1660
 							]
 						],
 						"settings":
@@ -274,13 +318,39 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4515.0,
+						"translation.y": 2424.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": "/tmp/subl stdin 6zaqkP.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "lib/link/javascript.js",
 					"settings":
 					{
@@ -307,7 +377,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "lib/checkout/git.js",
 					"settings":
 					{
@@ -334,7 +404,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "/tmp/subl stdin Lb2MSO.txt",
 					"settings":
 					{
@@ -360,7 +430,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "lib/factory.js",
 					"settings":
 					{
@@ -387,7 +457,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "lib/link/index.js",
 					"settings":
 					{
@@ -413,7 +483,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "lib/checkout/index.js",
 					"settings":
 					{
@@ -439,7 +509,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "lib/process.js",
 					"settings":
 					{
@@ -450,8 +520,8 @@
 						"selection":
 						[
 							[
-								1527,
-								1527
+								1364,
+								1364
 							]
 						],
 						"settings":
@@ -460,7 +530,115 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
+						"translation.y": 307.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "bin/gittyup",
+					"settings":
+					{
+						"buffer_size": 1680,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1678,
+								1678
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 556.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/tmp/subl stdin PYBdDv.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "package.json",
+					"settings":
+					{
+						"buffer_size": 612,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								481,
+								481
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "README.md",
+					"settings":
+					{
+						"buffer_size": 3997,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								384,
+								384
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 182.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

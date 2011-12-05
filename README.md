@@ -1,4 +1,7 @@
-Gittyup is a node.js deplyment library with some slick features:
+Gittyup is a small node.js application deployment library similar to [n]()
+
+
+Gittyup is a node.js app deplyment library with some slick features:
 
 - Rollback support.
 - Script testing before using.
@@ -15,12 +18,14 @@ Gittyup is a node.js deplyment library with some slick features:
 ## Command Line
 
 	gup checkout daisy --repo=https://github.com/crcn/daisy.git
+	gup use daisy r5 #use a particular checkout 
 
 ### Options
-     help             
-     rollback :name                                Rollback a repositoriy                                                   
-     history :name                                 Repo history                                                             
-     checkout :name :repo OR checkout :name        checks out a repository
+     help                                                                             
+     rollback :name                                  Rollback a repositoriy           
+     history :name                                   Repo history                     
+     use :name :release                              Uses a repo                      
+     checkout :name :repo OR checkout :name          checks out a repository
 
 ## Documentation
 
@@ -73,7 +78,10 @@ First argument can be either a string (app name), or object
 * `maxRecords` -  Maximum number of application records to keep locally.
 
 
-### .app().checkout(source, callback)
+### .app().checkout(opsOrSource, callback)
+
+- `opsOrSource` - Options (object) or the repo source (string) for the app.
+	- `repository` - repository of the project. Can be local directory, git repo, or .slug file
 
 From a git repository:
 
