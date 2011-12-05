@@ -14,7 +14,8 @@
         "gumbo": "<0.2.0",
         "celeri": "<0.3.0",
         "yaconfig": "*",
-        "moment":"*"
+        "moment":"*",
+        "beet":"*"
     },
     "bin": {
         "gup":"./bin/gittyup"
