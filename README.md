@@ -1,9 +1,9 @@
-Gittyup is a small node.js application deployment library similar to [n](/visionmedia/n)
+Gittyup is a small node.js application deployment library similar to [n](/visionmedia/n).
 
 
 ### Features
 
-- Command LIne Interface
+- Command Line Interface.
 - Rollback support.
 - Script testing before using.
 - Start/Stop/Restart checked out apps.
@@ -12,7 +12,7 @@ Gittyup is a small node.js application deployment library similar to [n](/vision
 
 ## Command Line
 
-	gup checkout daisy --repo=https://github.com/crcn/daisy.git
+	gup checkout daisy --repo=https://github.com/crcn/daisy.git --branch=app-branch
 	gup use daisy r5 #use a particular checkout 
 
 ### Options

@@ -19,7 +19,7 @@
 			"file": "lib/app.js",
 			"settings":
 			{
-				"buffer_size": 8175,
+				"buffer_size": 8282,
 				"line_ending": "Unix"
 			}
 		},
@@ -35,7 +35,7 @@
 			"file": "lib/link/javascript.js",
 			"settings":
 			{
-				"buffer_size": 1029,
+				"buffer_size": 1024,
 				"line_ending": "Unix"
 			}
 		},
@@ -43,7 +43,7 @@
 			"file": "lib/checkout/git.js",
 			"settings":
 			{
-				"buffer_size": 727,
+				"buffer_size": 724,
 				"line_ending": "Unix"
 			}
 		},
@@ -59,7 +59,7 @@
 			"file": "lib/factory.js",
 			"settings":
 			{
-				"buffer_size": 478,
+				"buffer_size": 470,
 				"line_ending": "Unix"
 			}
 		},
@@ -83,7 +83,7 @@
 			"file": "lib/process.js",
 			"settings":
 			{
-				"buffer_size": 1769,
+				"buffer_size": 1728,
 				"line_ending": "Unix"
 			}
 		},
@@ -91,7 +91,7 @@
 			"file": "bin/gittyup",
 			"settings":
 			{
-				"buffer_size": 1680,
+				"buffer_size": 2248,
 				"line_ending": "Unix"
 			}
 		},
@@ -104,18 +104,61 @@
 			}
 		},
 		{
-			"file": "package.json",
+			"file": "/tmp/subl stdin 6MWEfN.txt",
 			"settings":
 			{
-				"buffer_size": 612,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "README.md",
+			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 3997,
+				"buffer_size": 660,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Gittyup is a small node.js application deployment library similar to [n](/visionmedia/n).\n\n\n### Features\n\n- Command Line Interface.\n- Rollback support.\n- Script testing before using.\n- Start/Stop/Restart checked out apps.\n- Make a slug out of your app and easily move it quickly between servers.\n\n\n## Command Line\n\n	gup checkout daisy --repo=https://github.com/crcn/daisy.git\n	gup use daisy r5 #use a particular checkout \n\n### Options\n     help                                                                             \n     rollback :name                                  Rollback a repositoriy           \n     history :name                                   Repo history                     \n     use :name :release                              Uses a repo                      \n     checkout :name :repo OR checkout :name          checks out a repository\n\n## Documentation\n\n\n### .gittyup(rootDirectory)\n\nroot directory by default is /etc/gittyup/\n\n```javascript\n\nvar gittyup = require('gittyup')('/etc/bonsai/garden/'),\napp = gittyup.app('myApp');\n\n\napp.checkout('myProjectSource', function(err, result)\n{\n\n	//something went wrong in the checkout phase - most likely in linking, rollback\n	if(err) return app.rollback();  \n	             \n	\n	//test to make sure everythings good\n	app.test(function(err, result)\n	{\n		//something went wrong in the testing phase, rollback\n		if(err) return app.rollback();\n\n\n		//start upp the application\n		app.process(function(err, process)\n		{\n			process.start();\n		});\n	});\n});\n\n//...\n\n```\n\n\n### .app(ops)\n\nFirst argument can be either a string (app name), or object\n\n#### arguments\n	\n* `name` - The name of the application.\n* `group` - The group the application is in.\n* `maxRecords` -  Maximum number of application records to keep locally.\n\n\n### .app().checkout(opsOrSource, callback)\n\n- `opsOrSource` - Options (object) or the repo source (string) for the app.\n	- `repository` - repository of the project. Can be local directory, git repo, or .slug file\n\nFrom a git repository:\n\n```javascript\n\ngittyup.app('myApp').checkout('git@github.com:spiceapps/gittyup-test.git', function(err, result)\n{\n	//do stuff!\n});\n\n```\n\nFrom a generated slug:\n\n```javascript\n\ngittyup.app('myApp').checkout('http://mydomain.com/someApp.slug', function(err, result)\n{\n});\n\n```\n\nFrom a local directory:\n\n```javascript\n\ngittyup.app('myApp').checkout('/some/local/path', function(err, result)\n{\n	\n});\n\n```\n\n### .app().process(callback)\n\nReturns a runnable process of the current checked out item.\n\n\n````javascript\n\n\ngittyup.app('myApp').process(function(err, process)\n{\n\n	process.start(function(err, result)\n	{\n		//...\n	});\n\n	process.stop(function(err, result)\n	{\n		//...\n	});\n\n	process.restart(function(err, result)\n	{\n		//...\n	});\n});\n\n\n```\n\n#### .app().test(callback)\n\nTests the most recent checked out item. Make sure to include \"scripts:test\" in your package.json. Something like:\n\n```javascript\n\n\n{\n    \"name\": \"myApp\",\n\n    \"scripts\": {\n    	\"test\": \"./test\"\n    }\n}\n````\n\nWhen exiting the test program, an exit code of 0 tells gittyup the test was successful, whereas 1 tells gittyup the test failed.\n\n### .app().makeSlug(callback)\n\nMakes a slug out of the current checkout. Use this method if you need to move the application around between servers. \nOnce a slug is made, calling \"makeSlug\" on the same checkout will have no effect.\n\n\n```javascript\n\ngittyup.app('myApp').makeSlug(function(err, item)\n{\n	console.log(item.slug); // /etc/gittyup/apps/myApp/16767565434/slug/753a644f4e7aaa7fc9132be92d000002.tar.gz\n\n});\n\n```\n\nIf you're moving the slug around, install gittyup on the other end and have something ready like this:\n\n```javascript\n\ngittyup.app('myApp').checkout('http://myServer.com/myApp.slug', function(err, result)\n{\n	//...do stuff with transported slug\n})\n\n```\n\n\n\n### .app().current(callback)\n\nReturns Information about the current checked out item.\n\n### .app().history(callback)\n\nReturns checkout history of the given application.\n\n### .app().use(checkoutId)\n\nUses a previously used checkout item without removing the current one.\n\n### .app().remove(checkoutId, callback)\n\nRemoves a checked out item.\n\n### .app().destroy(callback)\n\nDestroys the application, and all the checked out items.\n\n\n\n\n",
+			"file": "README.md",
+			"file_size": 4228,
+			"file_write_time": 1323113094000000,
+			"settings":
+			{
+				"buffer_size": 4230,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/index.js",
+			"settings":
+			{
+				"buffer_size": 643,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/checkout/fs.js",
+			"settings":
+			{
+				"buffer_size": 560,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/checkout/slug.js",
+			"settings":
+			{
+				"buffer_size": 334,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/slug.js",
+			"settings":
+			{
+				"buffer_size": 1316,
 				"line_ending": "Unix"
 			}
 		}
@@ -267,7 +310,7 @@
 	"groups":
 	[
 		{
-			"selected": 11,
+			"selected": 14,
 			"sheets":
 			[
 				{
@@ -301,15 +344,15 @@
 					"file": "lib/app.js",
 					"settings":
 					{
-						"buffer_size": 8175,
+						"buffer_size": 8282,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1652,
-								1660
+								6388,
+								6388
 							]
 						],
 						"settings":
@@ -318,7 +361,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2424.0,
+						"translation.y": 4175.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -354,15 +397,15 @@
 					"file": "lib/link/javascript.js",
 					"settings":
 					{
-						"buffer_size": 1029,
+						"buffer_size": 1024,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								731,
-								731
+								563,
+								563
 							]
 						],
 						"settings":
@@ -371,7 +414,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 89.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -381,15 +424,15 @@
 					"file": "lib/checkout/git.js",
 					"settings":
 					{
-						"buffer_size": 727,
+						"buffer_size": 724,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								449,
-								449
+								657,
+								657
 							]
 						],
 						"settings":
@@ -434,15 +477,15 @@
 					"file": "lib/factory.js",
 					"settings":
 					{
-						"buffer_size": 478,
+						"buffer_size": 470,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								276,
-								276
+								71,
+								71
 							]
 						],
 						"settings":
@@ -468,8 +511,8 @@
 						"selection":
 						[
 							[
-								83,
-								83
+								82,
+								82
 							]
 						],
 						"settings":
@@ -494,8 +537,8 @@
 						"selection":
 						[
 							[
-								131,
-								131
+								82,
+								82
 							]
 						],
 						"settings":
@@ -513,15 +556,15 @@
 					"file": "lib/process.js",
 					"settings":
 					{
-						"buffer_size": 1769,
+						"buffer_size": 1728,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1364,
-								1364
+								1513,
+								1513
 							]
 						],
 						"settings":
@@ -530,7 +573,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 307.0,
+						"translation.y": 403.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -540,15 +583,15 @@
 					"file": "bin/gittyup",
 					"settings":
 					{
-						"buffer_size": 1680,
+						"buffer_size": 2248,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1678,
-								1678
+								1279,
+								1279
 							]
 						],
 						"settings":
@@ -557,7 +600,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 556.0,
+						"translation.y": 30.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -590,18 +633,44 @@
 				},
 				{
 					"buffer": 12,
-					"file": "package.json",
+					"file": "/tmp/subl stdin 6MWEfN.txt",
 					"settings":
 					{
-						"buffer_size": 612,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								481,
-								481
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "package.json",
+					"settings":
+					{
+						"buffer_size": 660,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -617,19 +686,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 14,
 					"file": "README.md",
 					"settings":
 					{
-						"buffer_size": 3997,
+						"buffer_size": 4230,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								384,
-								384
+								89,
+								89
 							]
 						],
 						"settings":
@@ -638,7 +707,114 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 182.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "lib/index.js",
+					"settings":
+					{
+						"buffer_size": 643,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								483,
+								483
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "lib/checkout/fs.js",
+					"settings":
+					{
+						"buffer_size": 560,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								154,
+								154
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "lib/checkout/slug.js",
+					"settings":
+					{
+						"buffer_size": 334,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								268,
+								268
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "lib/slug.js",
+					"settings":
+					{
+						"buffer_size": 1316,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1269,
+								1269
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 157.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

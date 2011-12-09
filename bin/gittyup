@@ -15,15 +15,19 @@ celeri.onCommand({ command: 'checkout :name :repo OR checkout :name', desc: 'che
 	var data = this.data,
 	name = data.name,
 	gap = gup(name, data.records || 20),
-	repo = decodeURIComponent(data.repo || cfg.get(name+':repository'));
+	repo = decodeURIComponent(data.repo || cfg.get(name+':repository')),
+	branch = data.branch || cfg.get(name+':branch');
 
 
-	var em = gap.checkout(repo, function(err, result) {
+	var em = gap.checkout({ repository: repo, branch: branch }, function(err, result) {
 		
 		cfg.set(name+':repository', repo);
+		cfg.set(name+':branch', branch);
 
 		gap.process(function(err, process) {
 			
+			if(err) return console.error(err);
+
 			process.restart(function(err, result) {
 				
 			});
