@@ -19,7 +19,7 @@
 			"file": "lib/app.js",
 			"settings":
 			{
-				"buffer_size": 8282,
+				"buffer_size": 8331,
 				"line_ending": "Unix"
 			}
 		},
@@ -43,7 +43,7 @@
 			"file": "lib/checkout/git.js",
 			"settings":
 			{
-				"buffer_size": 724,
+				"buffer_size": 1111,
 				"line_ending": "Unix"
 			}
 		},
@@ -91,7 +91,7 @@
 			"file": "bin/gittyup",
 			"settings":
 			{
-				"buffer_size": 2248,
+				"buffer_size": 2404,
 				"line_ending": "Unix"
 			}
 		},
@@ -120,13 +120,18 @@
 			}
 		},
 		{
-			"contents": "Gittyup is a small node.js application deployment library similar to [n](/visionmedia/n).\n\n\n### Features\n\n- Command Line Interface.\n- Rollback support.\n- Script testing before using.\n- Start/Stop/Restart checked out apps.\n- Make a slug out of your app and easily move it quickly between servers.\n\n\n## Command Line\n\n	gup checkout daisy --repo=https://github.com/crcn/daisy.git\n	gup use daisy r5 #use a particular checkout \n\n### Options\n     help                                                                             \n     rollback :name                                  Rollback a repositoriy           \n     history :name                                   Repo history                     \n     use :name :release                              Uses a repo                      \n     checkout :name :repo OR checkout :name          checks out a repository\n\n## Documentation\n\n\n### .gittyup(rootDirectory)\n\nroot directory by default is /etc/gittyup/\n\n```javascript\n\nvar gittyup = require('gittyup')('/etc/bonsai/garden/'),\napp = gittyup.app('myApp');\n\n\napp.checkout('myProjectSource', function(err, result)\n{\n\n	//something went wrong in the checkout phase - most likely in linking, rollback\n	if(err) return app.rollback();  \n	             \n	\n	//test to make sure everythings good\n	app.test(function(err, result)\n	{\n		//something went wrong in the testing phase, rollback\n		if(err) return app.rollback();\n\n\n		//start upp the application\n		app.process(function(err, process)\n		{\n			process.start();\n		});\n	});\n});\n\n//...\n\n```\n\n\n### .app(ops)\n\nFirst argument can be either a string (app name), or object\n\n#### arguments\n	\n* `name` - The name of the application.\n* `group` - The group the application is in.\n* `maxRecords` -  Maximum number of application records to keep locally.\n\n\n### .app().checkout(opsOrSource, callback)\n\n- `opsOrSource` - Options (object) or the repo source (string) for the app.\n	- `repository` - repository of the project. Can be local directory, git repo, or .slug file\n\nFrom a git repository:\n\n```javascript\n\ngittyup.app('myApp').checkout('git@github.com:spiceapps/gittyup-test.git', function(err, result)\n{\n	//do stuff!\n});\n\n```\n\nFrom a generated slug:\n\n```javascript\n\ngittyup.app('myApp').checkout('http://mydomain.com/someApp.slug', function(err, result)\n{\n});\n\n```\n\nFrom a local directory:\n\n```javascript\n\ngittyup.app('myApp').checkout('/some/local/path', function(err, result)\n{\n	\n});\n\n```\n\n### .app().process(callback)\n\nReturns a runnable process of the current checked out item.\n\n\n````javascript\n\n\ngittyup.app('myApp').process(function(err, process)\n{\n\n	process.start(function(err, result)\n	{\n		//...\n	});\n\n	process.stop(function(err, result)\n	{\n		//...\n	});\n\n	process.restart(function(err, result)\n	{\n		//...\n	});\n});\n\n\n```\n\n#### .app().test(callback)\n\nTests the most recent checked out item. Make sure to include \"scripts:test\" in your package.json. Something like:\n\n```javascript\n\n\n{\n    \"name\": \"myApp\",\n\n    \"scripts\": {\n    	\"test\": \"./test\"\n    }\n}\n````\n\nWhen exiting the test program, an exit code of 0 tells gittyup the test was successful, whereas 1 tells gittyup the test failed.\n\n### .app().makeSlug(callback)\n\nMakes a slug out of the current checkout. Use this method if you need to move the application around between servers. \nOnce a slug is made, calling \"makeSlug\" on the same checkout will have no effect.\n\n\n```javascript\n\ngittyup.app('myApp').makeSlug(function(err, item)\n{\n	console.log(item.slug); // /etc/gittyup/apps/myApp/16767565434/slug/753a644f4e7aaa7fc9132be92d000002.tar.gz\n\n});\n\n```\n\nIf you're moving the slug around, install gittyup on the other end and have something ready like this:\n\n```javascript\n\ngittyup.app('myApp').checkout('http://myServer.com/myApp.slug', function(err, result)\n{\n	//...do stuff with transported slug\n})\n\n```\n\n\n\n### .app().current(callback)\n\nReturns Information about the current checked out item.\n\n### .app().history(callback)\n\nReturns checkout history of the given application.\n\n### .app().use(checkoutId)\n\nUses a previously used checkout item without removing the current one.\n\n### .app().remove(checkoutId, callback)\n\nRemoves a checked out item.\n\n### .app().destroy(callback)\n\nDestroys the application, and all the checked out items.\n\n\n\n\n",
 			"file": "README.md",
-			"file_size": 4228,
-			"file_write_time": 1323113094000000,
 			"settings":
 			{
-				"buffer_size": 4230,
+				"buffer_size": 4250,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin 41tQ1C.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -246,6 +251,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"checkout'",
 			"checkout",
 			"history",
 			"link",
@@ -310,7 +316,7 @@
 	"groups":
 	[
 		{
-			"selected": 14,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -344,15 +350,15 @@
 					"file": "lib/app.js",
 					"settings":
 					{
-						"buffer_size": 8282,
+						"buffer_size": 8331,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6388,
-								6388
+								2359,
+								2359
 							]
 						],
 						"settings":
@@ -361,7 +367,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4175.0,
+						"translation.y": 1404.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -424,15 +430,15 @@
 					"file": "lib/checkout/git.js",
 					"settings":
 					{
-						"buffer_size": 724,
+						"buffer_size": 1111,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								657,
-								657
+								532,
+								532
 							]
 						],
 						"settings":
@@ -563,8 +569,8 @@
 						"selection":
 						[
 							[
-								1513,
-								1513
+								432,
+								432
 							]
 						],
 						"settings":
@@ -573,7 +579,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 403.0,
+						"translation.y": 34.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -583,15 +589,15 @@
 					"file": "bin/gittyup",
 					"settings":
 					{
-						"buffer_size": 2248,
+						"buffer_size": 2404,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1279,
-								1279
+								785,
+								785
 							]
 						],
 						"settings":
@@ -600,7 +606,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 30.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -669,8 +675,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								106,
+								106
 							]
 						],
 						"settings":
@@ -690,15 +696,15 @@
 					"file": "README.md",
 					"settings":
 					{
-						"buffer_size": 4230,
+						"buffer_size": 4250,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								89,
-								89
+								395,
+								395
 							]
 						],
 						"settings":
@@ -714,6 +720,32 @@
 				},
 				{
 					"buffer": 15,
+					"file": "/tmp/subl stdin 41tQ1C.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
 					"file": "lib/index.js",
 					"settings":
 					{
@@ -724,8 +756,8 @@
 						"selection":
 						[
 							[
-								483,
-								483
+								295,
+								295
 							]
 						],
 						"settings":
@@ -740,7 +772,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 17,
 					"file": "lib/checkout/fs.js",
 					"settings":
 					{
@@ -767,7 +799,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 18,
 					"file": "lib/checkout/slug.js",
 					"settings":
 					{
@@ -793,7 +825,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 19,
 					"file": "lib/slug.js",
 					"settings":
 					{
