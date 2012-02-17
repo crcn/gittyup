@@ -1,29 +1,29 @@
 {
-    "name": "gittyup",
-    "descriptions": "easy git deployment for node.js apps",
-    "version": "0.1.5",
-    "author": "Craig Condon <craig@crcn.com>",
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/crcn/gittyup.git"
-    },
-    "main": "./lib/index.js",
-    "dependencies": {
-        "structr": "0.1.0",
-        "node-fs": "0.1.0",
-        "gumbo": "<0.2.0",
-        "celeri": "<0.3.0",
-        "yaconfig": "<0.1.0",
-        "moment": "1.1.1",
-        "beet": "<0.2.0",
-        "colors": "0.5.1"
-    },
-    "bin": {
-        "gup": "./bin/gittyup"
-    },
-    "os": [
-        "linux",
-        "darwin",
-        "freebsd"
-    ]
+  "name": "gittyup",
+  "descriptions": "easy git deployment for node.js apps",
+  "version": "0.1.5",
+  "author": "Craig Condon <craig@crcn.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/crcn/gittyup.git"
+  },
+  "main": "./lib/index.js",
+  "dependencies": {
+    "structr": "0.1.0",
+    "node-fs": "0.1.0",
+    "gumbo": "<0.2.0",
+    "celeri": "<0.3.0",
+    "yaconfig": "<0.1.0",
+    "moment": "1.1.1",
+    "beet": "<0.2.0",
+    "colors": "0.5.1"
+  },
+  "bin": {
+    "gup": "./bin/gittyup"
+  },
+  "os": [
+    "linux",
+    "darwin",
+    "freebsd"
+  ]
 }

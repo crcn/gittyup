@@ -19,7 +19,7 @@
 			"file": "lib/app.js",
 			"settings":
 			{
-				"buffer_size": 8331,
+				"buffer_size": 8330,
 				"line_ending": "Unix"
 			}
 		},
@@ -44,6 +44,14 @@
 			"settings":
 			{
 				"buffer_size": 1111,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin mHhNES.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -251,6 +259,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"max",
 			"checkout'",
 			"checkout",
 			"history",
@@ -316,7 +325,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -350,15 +359,15 @@
 					"file": "lib/app.js",
 					"settings":
 					{
-						"buffer_size": 8331,
+						"buffer_size": 8330,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2359,
-								2359
+								469,
+								469
 							]
 						],
 						"settings":
@@ -367,7 +376,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1404.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -454,7 +463,7 @@
 				},
 				{
 					"buffer": 5,
-					"file": "/tmp/subl stdin Lb2MSO.txt",
+					"file": "/tmp/subl stdin mHhNES.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -480,6 +489,32 @@
 				},
 				{
 					"buffer": 6,
+					"file": "/tmp/subl stdin Lb2MSO.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "lib/factory.js",
 					"settings":
 					{
@@ -506,7 +541,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "lib/link/index.js",
 					"settings":
 					{
@@ -532,7 +567,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "lib/checkout/index.js",
 					"settings":
 					{
@@ -558,7 +593,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "lib/process.js",
 					"settings":
 					{
@@ -579,13 +614,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 34.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 11,
 					"file": "bin/gittyup",
 					"settings":
 					{
@@ -612,7 +647,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 12,
 					"file": "/tmp/subl stdin PYBdDv.txt",
 					"settings":
 					{
@@ -638,7 +673,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 13,
 					"file": "/tmp/subl stdin 6MWEfN.txt",
 					"settings":
 					{
@@ -664,7 +699,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 14,
 					"file": "package.json",
 					"settings":
 					{
@@ -692,7 +727,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 15,
 					"file": "README.md",
 					"settings":
 					{
@@ -719,7 +754,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 16,
 					"file": "/tmp/subl stdin 41tQ1C.txt",
 					"settings":
 					{
@@ -745,7 +780,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 17,
 					"file": "lib/index.js",
 					"settings":
 					{
@@ -772,7 +807,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 18,
 					"file": "lib/checkout/fs.js",
 					"settings":
 					{
@@ -799,7 +834,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 19,
 					"file": "lib/checkout/slug.js",
 					"settings":
 					{
@@ -825,7 +860,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 20,
 					"file": "lib/slug.js",
 					"settings":
 					{
@@ -846,7 +881,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 157.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
