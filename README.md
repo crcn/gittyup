@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/crcn/gittyup.png)](http://travis-ci.org/crcn/gittyup)
 Gittyup is a small node.js application deployment library similar to [n](/visionmedia/n).
 
 
